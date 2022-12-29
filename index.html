@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2b94b79891.js" crossorigin="anonymous"></script>
     <title>oh My Food</title>
     <link rel="stylesheet" href="style.css">
    
@@ -12,13 +12,14 @@
 <body>
    <header>
     <h1>Ohmyfood</h1>
-   </header> 
-   <main>
+</header> 
+
     <div class="city">
-        <i class="fa fa-map-marker"></i>
+        <i class="fas fa-map-marker-alt"></i>
         <h2>Paris, Belville</h2>
     </div>
-
+        
+    <main>
     <section class="explorer">
         <h2>Réserver le menu qui <br> vous convient</h2>
         <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
@@ -28,12 +29,69 @@
         </div>
     </section>
     <section class="tuto">
+        <h2>Fonctionnement</h2>
         <ol>
-            <li>Choisissez un restaurant</li>
-            <li>Composer votre menu</li>
-            <li>Déguster dans un restaurant</li>
+            <li> <i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+            <li> <i class="fas fa-list-ul"></i>Composer votre menu</li>
+            <li> <i class="fas fa-store bouton--noir"></i>Déguster dans un restaurant</li>
         </ol>
     </section>
+
+    <section class="menus">
+        <h2>Restaurant</h2>
+        <div class="menus__cards">
+            <a href="#" class="card new">
+               <div class="card__image card__image-1"></div>
+               <div class="card__description">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+                <i class="far fa-heart"></i>
+               </div>
+            </a>
+            <a href="#" class="card new">
+               <div class="card__image card__image-2"></div>
+               <div class="card__description">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+                 <i class="far fa-heart"></i>
+               </div>
+            </a>
+            <a href="#" class="card">
+               <div class="card__image card__image-3"></div>
+               <div class="card__description">
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
+                 <i class="far fa-heart"></i>
+               </div>
+            </a>
+            <a href="#" class="card">
+               <div class="card__image card__image-4"></div>
+               <div class="card__description">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+                 <i class="far fa-heart"></i>
+               </div>
+            </a>
+           
+        </div>
+    </section>
    </main>
+
+   <footer>
+    <h2>ohmyfood</h2>
+    <p>
+        <i class="fas fa-utensils"></i>
+        Proposer un restaurant 
+    </p>
+    <p>
+        <i class="fas fa-hands-helping"></i>
+        Devenir partenaire 
+    </p>
+    <p>Mentions légales</p>
+    <p>
+        <a href="mailto:a@gmail.com">Contact</a>
+    </p>
+   </footer>
+
 </body>
 </html>

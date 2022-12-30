@@ -1,30 +1,29 @@
-@use"../utils/mixins.scss";
+@use "../utils/mixins.scss";
 
+.explorer {
+  text-align: center;
+  & h2 {
+    font-size: 2rem;
+  }
 
-.explorer{
-    text-align: center;
-    & h2{
-     font-size: 2rem;
- }
- 
- & p{
-     font-size: 1rem;
-     margin: 1rem;
- }
- & button{
-     color: white;
-     font-weight: 100;
-     font-size: 1.5rem;
-     padding: 1rem 2rem;
-     border: none;
-     border-radius: 2rem;
-     transition: transform 200ms;
-     margin-top: 1rem;
-     @include mixins.base-shadow;
-     @include mixins.gradient(0.9);
- }
- & button:hover{
-     transform: scale(1.02);
-     opacity: 0.9;
- }
- }
+  & p {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  & button {
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    transition: transform 200ms;
+    margin-top: 1rem;
+    @include mixins.box-shadow;
+    @include mixins.gradient(0.9);
+  }
+  & button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+  }
+}

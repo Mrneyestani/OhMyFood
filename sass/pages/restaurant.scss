@@ -1,0 +1,14 @@
+
+@use"../utils/mixins.scss";
+img{
+    max-width: 100%;
+}
+
+.resto__main{
+padding: 0 1rem;
+h2{
+    font-family: "shrikhand", "cursive";
+    width: 100%;
+    @include mixins.heart-inimated;
+}
+}

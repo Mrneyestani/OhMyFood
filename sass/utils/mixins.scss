@@ -12,8 +12,8 @@
   box-shadow: 2px 1px 8px -3px colors.$light-gray;
 }
 
-@mixin transform-zoom {
-  transform: scale(1.02);
+@mixin transform-zoom($zoom-level: 1.02, $transformation: none) {
+  transform: $transformation scale($zoom-level);
 }
 
 @mixin font-awesome($font-weight: 400){

@@ -8,7 +8,14 @@ body {
 }
 
 #page-resto {
-  header::before{
+  header{
+    &::before{
+      transition: transform 200ms;
+    }
+    &:hover::before{
+      @include mixins.transform-zoom($zoom-level: 1.2, $transformation: translateY(-50%));
+    }
+  &::before{
     @include mixins.font-awesome($font-weight: 900);
     content: "\f060";
     left: 1rem;
@@ -16,6 +23,7 @@ body {
     transform: translateY(-50%);
     font-size: 20px;
   }
+}
   .banner img {
     display: block;
     width: 100%;

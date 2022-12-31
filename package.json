@@ -1,8 +1,13 @@
 {
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
     "sass": "^1.57.1"
   },
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "build": "postcss style.css -u autoprefixer cssnano -o ./../build/style.min.css"
   }
 }

@@ -9,9 +9,6 @@ body {
 
 #page-resto {
   header{
-    &::before{
-      transition: transform 200ms;
-    }
     &:hover::before{
       @include mixins.transform-zoom($zoom-level: 1.2, $transformation: translateY(-50%));
     }
@@ -22,6 +19,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+    transition: transform 200ms;
   }
 }
   .banner img {
@@ -56,6 +54,7 @@ body {
       text-transform: uppercase;
       font-weight: 400;
       position: relative;
+      margin-bottom: 1rem;
       &::after{
         content: "";
         position: absolute;
@@ -67,13 +66,22 @@ body {
       }
     }
     .menus__category {
+      overflow: hidden;
       .menu-item {
+        $numberOfItems: 3;
+        @for $i from 1 through $numberOfItems {
+         &:nth-child(#{$i}){
+          animation-delay: 100ms * $i;
+         }
+        }
         display: flex;
         background-color: white;
         border-radius: 1rem;
         overflow: hidden;
         margin: 0.5rem;
         @include mixins.box-shadow;
+        animation: appear 1s;
+        animation-fill-mode: both;
         .menu-item__price {
           margin-left: auto;
           font-weight: 900;

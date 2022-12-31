@@ -204,22 +204,22 @@ h2 {
   top: 1rem;
 }
 #homepage .menus .card__image {
-  height: 15rem;
+  height: 20rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
   background-position: center;
 }
 #homepage .menus .card__image-1 {
-  background-image: url("../assets/menu-1.jpg");
+  background-image: url("./assets/menu-1.jpg");
 }
 #homepage .menus .card__image-2 {
-  background-image: url("../assets/menu-2.jpg");
+  background-image: url("./assets/menu-2.jpg");
 }
 #homepage .menus .card__image-3 {
-  background-image: url("../assets/menu-3.jpg");
+  background-image: url("./assets/menu-3.jpg");
 }
 #homepage .menus .card__image-4 {
-  background-image: url("../assets/menu-4.jpg");
+  background-image: url("./assets/menu-4.jpg");
 }
 #homepage .menus .card__description {
   position: relative;

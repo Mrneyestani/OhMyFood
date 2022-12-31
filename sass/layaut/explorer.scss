@@ -3,8 +3,10 @@
 
 .explorer {
   text-align: center;
+  margin: 2rem;
   & h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 1rem;
   }
 
   & p {
@@ -13,6 +15,7 @@
   }
   & button {
     @include mixins.base-button;
+    font-size: 1rem;
   }
 }
 

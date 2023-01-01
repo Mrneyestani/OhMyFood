@@ -1,27 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-* {
+*, ::before, ::after {
   box-sizing: boreder-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
 }
 
 main {
   padding: 0 7rem;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1190px) {
   main {
-    padding: 0 1rem;
+    padding: 0;
   }
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -30,11 +25,18 @@ a {
 }
 
 header {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", "cursive";
   text-align: center;
-  box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0.3rem rgba(0, 0, 0, 0.05);
   padding: 0.3rem;
+  margin: 0 7rem;
   position: relative;
+  font-size: 1rem;
+}
+@media (max-width: 1000px) {
+  header {
+    margin: 0;
+  }
 }
 
 .city {
@@ -42,12 +44,18 @@ header {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: #f3f3f3;
+  background-color: #e9e5e5;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
+  margin: 0 7rem;
 }
 .city i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+@media (max-width: 1000px) {
+  .city {
+    margin: 0;
+  }
 }
 
 h2 {
@@ -55,8 +63,15 @@ h2 {
 }
 
 .explorer {
+  background-color: #f3f3f3;
   text-align: center;
-  margin: 2rem;
+  margin: 0 7rem 3rem 7rem;
+  padding: 3.5rem 1rem;
+}
+@media (max-width: 1000px) {
+  .explorer {
+    margin: 0;
+  }
 }
 .explorer h2 {
   font-size: 1.5rem;
@@ -119,17 +134,19 @@ h2 {
   }
 }
 .tuto {
+  background-color: white;
   counter-reset: steps;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
 }
 .tuto h2 {
-  margin-bottom: 1.5rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
 }
 .tuto ol {
   display: flex;
-  gap: 2rem;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1190px) {
   .tuto ol {
     flex-direction: column;
   }
@@ -141,6 +158,7 @@ h2 {
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 1.5rem 2rem;
+  margin: 0.8rem 1rem;
   flex-grow: 1;
   border-radius: 1rem;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
@@ -175,8 +193,12 @@ h2 {
 }
 
 #homepage .menus {
-  background-color: #f6f6f6;
-  margin-bottom: 2rem;
+  background-color: #f3f3f3;
+  padding: 4rem 1rem;
+}
+#homepage .menus h2 {
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
 }
 #homepage .menus .menus__cards {
   display: grid;
@@ -222,6 +244,7 @@ h2 {
   background-image: url("assets/menu-4.jpg");
 }
 #homepage .menus .card__description {
+  padding: 1rem;
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
@@ -271,9 +294,6 @@ h2 {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }
-#homepage .menus .card__description h3, #homepage .menus .card__description p {
-  padding: 0.3rem;
-}
 
 footer {
   background-color: #353535;
@@ -284,6 +304,7 @@ footer h2 {
   font-family: "shrikhand", "sans-serif";
   font-weight: 500;
   padding: 1rem 0;
+  font-size: 1.2rem;
 }
 footer p {
   padding: 0.2rem;
@@ -299,10 +320,6 @@ footer p {
     opacity: 1;
   }
 }
-body {
-  background-color: #f6f6f6;
-}
-
 #page-resto header:hover::before {
   transform: translateY(-50%) scale(1.2);
 }
@@ -333,13 +350,15 @@ body {
   margin-top: -2rem;
 }
 #page-resto .resto__title h2 {
-  font-family: "shrikhand", "cursive";
+  font-size: 1.5rem;
+  font-family: "shrikhand", "sans-serif";
+  font-weight: 100;
   padding: 2rem 1rem;
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
   border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
 }
 #page-resto .resto__title h2::before {
   content: "\f004";

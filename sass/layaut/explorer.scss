@@ -1,9 +1,15 @@
 @use "../utils/mixins.scss";
 @use "../utils/colors";
+@use "../utils/variables.scss";
 
 .explorer {
+  background-color: colors.$lightergray;
   text-align: center;
-  margin: 2rem;
+  margin: 0 7rem 3rem 7rem;
+  padding: 3.5rem 1rem;
+  @media(max-width: variables.$breakpoint){
+    margin: 0;
+  }
   & h2 {
     font-size: 1.5rem;
     margin: 1rem;

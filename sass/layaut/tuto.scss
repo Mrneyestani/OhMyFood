@@ -9,20 +9,21 @@
   padding: 0 1.2rem;
   & h2 {
     margin: 1rem 0;
-    font-size: 1.7rem
+    font-size: 1.7rem;
   }
   & ol {
     display: flex;
     // gap: 2rem;
-    @media (max-width: variables.$breakpoint){
+    @media (max-width: variables.$breakpoint1200) {
       flex-direction: column;
     }
-  
   }
   & li {
     position: relative;
     display: flex;
     align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
     &::before {
       content: "";
       counter-increment: steps;
@@ -50,7 +51,7 @@
     &:hover {
       @include mixins.transform-zoom;
       background-color: lighten(colors.$purple, 35%);
-      i::before{
+      i::before {
         color: colors.$purple;
       }
     }

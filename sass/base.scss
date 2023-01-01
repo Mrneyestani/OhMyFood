@@ -1,35 +1,25 @@
+@use "utils/variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-
-*, ::before, ::after {
-  box-sizing: boreder-box;
+*,
+::before,
+::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
   font-family: "Roboto", "sans-serif";
-}  
+}
 
-main{
+main {
   padding: 0 7rem;
-  @media (max-width: 1190px) {
+  @media (max-width: variables.$breakpoint1330) {
     padding: 0;
   }
 }
-
-// choose{
-//   padding: 0 7rem;
-//   @media (max-width: 1190px) {
-//     padding: 0;
-//   }
-// }
-// h1, h2, h3, h4, h5, h6, p{
-//   padding: 0;
-//   margin: 0;
-// }
-
-a{
+a {
   text-decoration: none;
   color: inherit;
 }

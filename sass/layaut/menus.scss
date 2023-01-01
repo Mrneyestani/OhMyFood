@@ -5,14 +5,12 @@
 #homepage{
 .menus{
     background-color: colors.$lightergray;
-    // margin-top: 4rem;
-    padding: 4rem 1rem;
+    padding: 4rem 1.2rem;
 
     h2{
         padding-bottom: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
-   
     .menus__cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -34,12 +32,11 @@
             place-items: center;
             right: 1rem;
             top: 1rem;
-
         }
     }
     .card{
         &__image{
-            height: 20rem;
+            height: 17rem;
             border-radius: 1rem 1rem 0 0;
             background-size: cover;
             background-position: center;
@@ -52,12 +49,9 @@
        &__description{
         padding: 1rem;
         @include mixins.heart-inimated;
-        // h3{
-        //     padding: 1rem 0 0 1rem;
-        // } 
-        // p{
-        //     padding: 0.2rem 0 1rem 1rem;
-        // }
+        p{
+            padding-top: 0.3rem;
+        }
        } 
     }
 } 

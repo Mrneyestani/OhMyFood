@@ -8,6 +8,7 @@
   },
   "scripts": {
     "sass": "sass --watch style.scss style.css",
-    "build": "postcss style.css -u autoprefixer cssnano -o ./../build/style.min.css"
-  }
+    "prefix-nano": "postcss style.css -u autoprefixer cssnano -o ./css-prefix-nano/style-min.css"
+  },
+  "browserslist": "last 4 versions"
 }
